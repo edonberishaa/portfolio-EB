@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Grape+Nuts&family=Nunito:ital,wght@0,200;0,500;0,900;1,700&family=Open+Sans:ital,wght@0,300;1,300;1,400&family=Poppins:ital,wght@0,200;0,400;0,600;0,900;1,300&family=Rubik+Doodle+Shadow&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    /* background-color: #1d1e22; */
+}
+header .lluba{
+    display: flex;
+    justify-content: center;
+    background-color: #1d1e22;
+    color: rgb(144 46 10 / 99%);
+    padding: 8px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+nav h3{
+    font-size: 30px;
+    
+}
+nav .logo{
+    width: 30%;
+}
+.logo h3{
+    font-weight: bold;
+}
+nav .navsherbimet ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+nav .navsherbimet ul li{
+    list-style: none;
+}
+nav .navsherbimet ul li a{
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(144 46 10 / 99%);
+    list-style-image: url();
+}
+.container{
+    margin-top: 3%;
+    margin-left: 7%;
+}
+section{
+    display: flex;
+}
+
+.container img{
+object-fit: cover;
+border-radius: 170px;
+border: 3px solid rgb(144 46 10 / 99%);
+}
+.card-text{
+    width: 60%;
+}
+.card-text h1{
+    font-size: 90px;
+}
+.card-text h4{
+    font-size: 29px;
+    margin-bottom: -3%;
+}
+.card-text h3{
+    font-size: 35px;
+   /* color: rgb(144 46 10 / 99%);*/
+}
+.Berisha{
+    color: rgb(144 46 10 / 99%);
+}
+.card-text p {
+    padding: 8px;
+    font-size: 18px;
+}
+button{
+    padding: 22px 8%;
+    margin-top: 10px;
+    background-color: rgb(144 46 10 / 99%) ;
+    border-radius: 14px;
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (min-width : 320px) and (max-width : 520px){
+    nav .navsherbimet ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    nav .navsherbimet ul li a{
+        font-size: 15px;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    nav .logo{
+        width: 100%;
+    }
+    .card-text{
+        width: 100%;
+    }
+    .card-text h1{
+        width: 100%;
+        font-size: 45px;
+    }
+}
