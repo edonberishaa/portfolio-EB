@@ -10,15 +10,20 @@
     font-family: 'Poppins',sans-serif;
 }
 body{
-    height: 100vh;
-    /* background-color: #1d1e22; */
+    min-height: 100vh;
+    background: rgb(157,157,149);
+    background: radial-gradient(circle, rgba(157,157,149,1) 0%, rgba(12,16,5,1) 0%, rgba(8,11,8,0.9108893557422969) 57%, rgba(12,16,5,1) 77%);  
+    color: wheat;
 }
 header .lluba{
     display: flex;
     justify-content: center;
-    background-color: #1d1e22;
     color: rgb(144 46 10 / 99%);
+    width: 90%;
     padding: 8px;
+    letter-spacing: 2px;
+    animation: slide-in 8000ms;
+    animation-iteration-count: infinite;
 }
 nav{
     display: flex;
@@ -36,23 +41,33 @@ nav .logo{
 }
 .logo h3{
     font-weight: bold;
+    letter-spacing: 2px;
+}
+nav .navsherbimet{
+    display: flex;
+    align-items: center;
 }
 nav .navsherbimet ul{ 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 80px;
+    gap: 55px;
     
 }
-nav .navsherbimet ul li{
+/* Updated CSS */
+nav .navsherbimet ul li {
     list-style: none;
 }
-nav .navsherbimet ul li a{
+
+nav .navsherbimet ul li a {
     font-size: 23px;
     text-decoration: none;
     font-weight: bold;
     color: rgb(144 46 10 / 99%);
-    list-style-image: url();
+    transition: 0.4s ease-in;
+}
+nav .navsherbimet ul li a:hover{
+    color: white;
 }
 .container{
     margin-top: 3%;
@@ -89,15 +104,38 @@ border: 3px solid rgb(144 46 10 / 99%);
     font-size: 18px;
 }
 button{
-    padding: 22px 8%;
+    padding: 13px 5%;
     margin-top: 10px;
     background-color: rgb(144 46 10 / 99%) ;
     border-radius: 14px;
-    font-size: 21px;
-    color: black;
-    font-weight: bold;
+    font-size: 18px;
+    color: wheat;
+    font-weight: 600;
     cursor: pointer;
 }
+
+
+.buttons :nth-child(2){
+    background-color: unset;
+    transition: 0.7s ease-in-out;
+    margin-left: 10px;
+}
+.buttons :nth-child(2):hover{
+    background-color: rgb(144 46 10 / 99%) ;
+}
+
+@keyframes slide-in {
+    from {
+      opacity: 0.25;
+      scale: 1
+    }
+    to {
+        scale:1.1
+    }
+  }
+
+
+
 @media screen and (min-width : 320px) and (max-width : 520px){
     nav .navsherbimet ul{
         width: 100%;
