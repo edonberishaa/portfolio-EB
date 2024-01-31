@@ -192,7 +192,7 @@ button{
     }
 }
 @media screen and(min-width:1439px){
-    main{
+    *{
         padding:4px
     }
 }
