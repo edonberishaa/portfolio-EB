@@ -191,7 +191,8 @@ button{
         display: none;
     }
 }
-@media screen and(min-width:1440px){
+@media screen and(min-width:1439px){
     main{
-        padding:4px}
+        padding:4px
+    }
 }
