@@ -97,7 +97,7 @@ border: 3px solid rgb(144 46 10 / 99%);
     flex: 1;
     padding: 20px;
     margin-top: 7%;
-    font-size: 23px;
+    font-size: 21px;
     shape-outside: circle();
     letter-spacing: 0.3;
 }
@@ -105,7 +105,7 @@ border: 3px solid rgb(144 46 10 / 99%);
     height: 80vh;
 }
 .bio{
-    height: 100vh;
+    margin-bottom: 10%;
     shape-outside: circle();
 }
 .card-text h1{
@@ -146,6 +146,67 @@ button{
 .buttons :nth-child(2):hover{
     background-color: rgb(144 46 10 / 99%) ;
 }
+
+.services {
+    margin-left: -5%;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); 
+  }
+.services .box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px black solid;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    transition: 3s ease-in-out;
+}
+.services .box h1{
+    font-size: 37px;
+    color: rgb(144 46 10 / 99%);
+    transition: 2.0s ease-in-out;
+}
+.services .box h5{
+    color: gray;
+}
+.services .box p{
+    font-size: 17px;
+    line-height: 27px;
+    margin: 15px;
+
+}
+.services .box:hover {
+    background-color: rgb(46, 23, 15);
+}
+
+.services .box:hover > h1 {
+    /* color: black; */
+    color: wheat;
+}
+.myservices {
+    display:flex;
+    justify-content: center;
+    width: 90%;
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes slide-in {
     from {
