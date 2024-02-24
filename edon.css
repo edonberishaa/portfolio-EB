@@ -328,6 +328,6 @@ transform: scale(1.3);
 }
 @media screen and (min-width:1440px){
     .card-text{
-        padding: 25px;
+        padding: 47px;
     }
 }
