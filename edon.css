@@ -68,6 +68,8 @@ nav .navsherbimet ul li a:hover{
 }
 .container{
     margin-top: 3%;
+
+
     margin-left: 5%;
 }
 section{
@@ -258,34 +260,80 @@ transform: scale(1.3);
         scale:1.1
     }
   }
-
-
-
-@media screen and (min-width : 320px) and (max-width : 520px){
-    nav .navsherbimet ul{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    nav .navsherbimet ul li a{
-        font-size: 15px;
-    }
-    nav{
-        flex-wrap: wrap;
-    }
-    nav .logo{
-        width: 100%;
-    }
-    .card-text{
-        width: 100%;
-    }
-    .card-text h1{
-        width: 100%;
-        font-size: 45px;
-    }
+  @media (max-width: 768px) {
 }
+
+@media (max-width: 576px) {
+.services{
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)) !important; 
+}
+.bio img{
+    height: 1%;
+    width: 50%;
+}
+header .lluba{
+    display: none;
+}
+ nav{
+    display: flex;
+    flex-wrap: wrap;
+ }
+nav .logo{
+    width: 100%;
+    margin-bottom: 5%;
+}
+nav .navsherbimet{
+    display: none;
+}
+.text1{
+    height: 54vh !important;
+}
+.card-text{
+    display: block;
+}
+.card-text h1{
+    font-size: 300%;
+}
+.card-text h3{
+    font-size: 174%;
+}
+.card-text p{
+    font-size: 100% !important;
+}
+.BIOcard-text{
+    font-size: 15px;
+}
+.myservices{
+    font-size: 120%;
+    display: block;
+    margin-left: 15%;
+}
+.services .box h1{
+    font-size: 28px ;
+}
+.services .box p{
+    font-size: 15px ;
+}
+}
+
+
 @media screen and (min-width:767px) and (max-width:992px){
-    header .lluba{
-        width: 100%;
+    .pal{
+        font-size: 16px;
+        margin: 0 13%;
+    
+    
+    }
+    /* .services .box:nth-child(3){
+        width: 90vh;
+    } */
+    .bio{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .lluba{
+        display: none;
     }
     .text1{
         height: 100vh;
@@ -299,7 +347,7 @@ transform: scale(1.3);
         justify-content: center;
     }
     .container{
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -326,8 +374,43 @@ transform: scale(1.3);
         display: none;
     }
 }
-@media screen and (min-width:1440px){
-    .card-text{
-        padding: 47px;
+
+    @media (min-width: 1200px) {
+     
     }
-}
+
+    @media (max-width: 1200px) {
+        .services{
+            grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+        }
+        .text1 img{
+            display: none;
+        }
+        .card-text{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 3%;
+
+        }
+        .card-text p{
+            font-size: 20px;
+        }
+        .buttons{
+            padding: 10px;
+        }
+         .text1{
+            height: 65vh;
+        }
+        .bio{
+            display: block;
+        }
+        .bio img{
+            margin-left: 14%;
+        }
+    }
+    
+    
+
+
