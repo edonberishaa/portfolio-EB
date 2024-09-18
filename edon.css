@@ -286,7 +286,7 @@ nav .navsherbimet{
     display: none;
 }
 .text1{
-    height: 60vh !important;
+    height: 65vh !important;
 }
 .card-text{
     display: block;
@@ -314,9 +314,25 @@ nav .navsherbimet{
 .services .box p{
     font-size: 15px ;
 }
-    .buttons :nth-child(1) , .buttons :nth-child(2){
+.buttons :nth-child(1) , .buttons :nth-child(2){
     font-size: 12px;
-    }
+}
+.pal{
+    display: flex;
+    flex-direction: column;
+}
+.cc{
+    margin-bottom: 10%;
+    font-size: 16px;
+
+}
+.links{
+    font-size: 19px;
+
+}
+.links h1{
+    font-size: 30px;
+}
 }
 
 
@@ -378,9 +394,6 @@ nav .navsherbimet{
     }
 }
 
-    @media (min-width: 1200px) {
-     
-    }
 
     @media (max-width: 1200px) {
         .services{
