@@ -334,7 +334,11 @@ nav .navsherbimet{
     font-size: 30px;
 }
 }
-
+@media (max-width : 420px){
+    .text1{
+        height: 74vh !important;
+    }
+}
 
 @media screen and (min-width:767px) and (max-width:992px){
     .pal{
